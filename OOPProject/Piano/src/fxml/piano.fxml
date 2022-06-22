@@ -24,6 +24,12 @@
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Change Instrument">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Piano" />
+                  <MenuItem fx:id="btnDrum" mnemonicParsing="false" onAction="#loadDrum" text="Dump" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
    </top>
@@ -35,52 +41,46 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="btnC1" layoutX="40.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="C1" />
-            <Button fx:id="btnD1" layoutX="92.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="D1" />
-            <Button fx:id="btnE1" layoutX="144.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="E1" />
-            <Button fx:id="btnF1" layoutX="196.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="F1" />
-            <Button fx:id="btnG1" layoutX="248.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="G1" />
-            <Button fx:id="btnA1" layoutX="301.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="A1" />
-            <Button fx:id="btnB1" layoutX="353.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="B1" />
-            <Button fx:id="btnC2" layoutX="402.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="C2" />
-            <Button fx:id="btnD2" layoutX="454.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="D2" />
-            <Button fx:id="btnE2" layoutX="506.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="E2" />
-            <Button fx:id="btnF2" layoutX="558.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="F2" />
-            <Button fx:id="btnG2" layoutX="610.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="G2" />
-            <Button fx:id="btnA2" layoutX="662.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="A2" />
-            <Button fx:id="btnB2" layoutX="714.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="B2" />
-            <Button fx:id="btnC3" layoutX="766.0" layoutY="198.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="52.0" text="C3" />
-            <Button layoutX="502.0" layoutY="30.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="112.0" style="-fx-background-color: red;" text="Record" textFill="WHITE">
+            <Button fx:id="btnC1" layoutX="44.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnC1Pressed" prefHeight="181.0" prefWidth="55.0" text="C1" />
+            <Button fx:id="btnD1" layoutX="99.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnD1Pressed" prefHeight="181.0" prefWidth="55.0" text="D1" />
+            <Button fx:id="btnE1" layoutX="156.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnE1Pressed" prefHeight="181.0" prefWidth="55.0" text="E1" />
+            <Button fx:id="btnF1" layoutX="211.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnF1Pressed" prefHeight="181.0" prefWidth="55.0" text="F1" />
+            <Button fx:id="btnG1" layoutX="266.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnG1Pressed" prefHeight="181.0" prefWidth="55.0" text="G1" />
+            <Button fx:id="btnA1" layoutX="319.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnA1Pressed" prefHeight="181.0" prefWidth="55.0" text="A1" />
+            <Button fx:id="btnB1" layoutX="375.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnB1Pressed" prefHeight="181.0" prefWidth="55.0" text="B1" />
+            <Button fx:id="btnC2" layoutX="427.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnC2Pressed" prefHeight="181.0" prefWidth="55.0" text="C2" />
+            <Button fx:id="btnD2" layoutX="479.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnD2Pressed" prefHeight="181.0" prefWidth="55.0" text="D2" />
+            <Button fx:id="btnE2" layoutX="534.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnE2Pressed" prefHeight="181.0" prefWidth="55.0" text="E2" />
+            <Button fx:id="btnF2" layoutX="589.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnF2Pressed" prefHeight="181.0" prefWidth="55.0" text="F2" />
+            <Button fx:id="btnG2" layoutX="640.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnG2Pressed" prefHeight="181.0" prefWidth="55.0" text="G2" />
+            <Button fx:id="btnA2" layoutX="695.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnA2Pressed" prefHeight="181.0" prefWidth="55.0" text="A2" />
+            <Button fx:id="btnB2" layoutX="750.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnB2Pressed" prefHeight="181.0" prefWidth="55.0" text="B2" />
+            <Button layoutX="506.0" layoutY="27.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="112.0" style="-fx-background-color: red;" text="Record" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Label layoutX="628.0" layoutY="31.0" prefHeight="68.0" prefWidth="175.0" text="Timer: ">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="703.0" layoutY="40.0" prefHeight="51.0" prefWidth="100.0" text="00:00:00">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Button fx:id="btnC1Sharp" layoutX="66.0" layoutY="125.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="52.0" style="-fx-background-color: black;" text="C1#" textFill="WHITE" />
-            <Button fx:id="btnD1Sharp" layoutX="127.0" layoutY="125.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="52.0" style="-fx-background-color: black;" text="D1#" textFill="WHITE" />
-            <Button fx:id="btnF1Sharp" layoutX="213.0" layoutY="125.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="52.0" style="-fx-background-color: black;" text="F1#" textFill="WHITE" />
-            <Button fx:id="btnG1Sharp" layoutX="274.0" layoutY="125.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="52.0" style="-fx-background-color: black;" text="G1#" textFill="WHITE" />
-            <Button fx:id="btnA1Sharp" layoutX="342.0" layoutY="123.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="52.0" style="-fx-background-color: black;" text="A1#" textFill="WHITE" />
-            <Button fx:id="btnC2Sharp" layoutX="428.0" layoutY="123.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="52.0" style="-fx-background-color: black;" text="C2#" textFill="WHITE" />
-            <Button fx:id="btnD2Sharp" layoutX="491.0" layoutY="121.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="52.0" style="-fx-background-color: black;" text="D2#" textFill="WHITE" />
-            <Button fx:id="btnF2Sharp" layoutX="576.0" layoutY="121.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="52.0" style="-fx-background-color: black;" text="F2#" textFill="WHITE" />
-            <Button fx:id="btnG2Sharp" layoutX="642.0" layoutY="121.0" mnemonicParsing="false" prefHeight="153.0" prefWidth="52.0" style="-fx-background-color: black;" text="G2#" textFill="WHITE" />
-            <Button fx:id="btnA2Sharp" layoutX="703.0" layoutY="120.0" mnemonicParsing="false" prefHeight="154.0" prefWidth="52.0" style="-fx-background-color: black;" text="A2#" textFill="WHITE" />
+            <Button fx:id="btnC1Sharp" layoutX="74.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnC1SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="C1#" textFill="WHITE" />
+            <Button fx:id="btnD1Sharp" layoutX="134.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnD1SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="D1#" textFill="WHITE" />
+            <Button fx:id="btnF1Sharp" layoutX="243.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnF1SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="F1#" textFill="WHITE" />
+            <Button fx:id="btnG1Sharp" layoutX="300.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnG1SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="G1#" textFill="WHITE" />
+            <Button fx:id="btnA1Sharp" layoutX="360.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnA1SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="A1#" textFill="WHITE" />
+            <Button fx:id="btnC2Sharp" layoutX="456.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnC2SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="C2#" textFill="WHITE" />
+            <Button fx:id="btnD2Sharp" layoutX="519.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnD2SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="D2#" textFill="WHITE" />
+            <Button fx:id="btnF2Sharp" layoutX="613.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnF2SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="F2#" textFill="WHITE" />
+            <Button fx:id="btnG2Sharp" layoutX="667.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnG2SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="G2#" textFill="WHITE" />
+            <Button fx:id="btnA2Sharp" layoutX="722.0" layoutY="127.0" mnemonicParsing="false" onAction="#BtnA2SharpPressed" prefHeight="150.0" prefWidth="50.0" style="-fx-background-color: black;" text="A2#" textFill="WHITE" />
             <Slider fx:id="volumeSlider" layoutX="126.0" layoutY="48.0" onMouseReleased="#getVolume" />
             <Label layoutX="24.0" layoutY="31.0" prefHeight="48.0" prefWidth="84.0" text="Volume">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
+            <Button layoutX="661.0" layoutY="27.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="112.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </center>

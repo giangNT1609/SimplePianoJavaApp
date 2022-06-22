@@ -1,17 +1,36 @@
-import javafx.scene.input.KeyCode;
+import javafx.scene.media.AudioClip;
 
-public class Note implements Playable {
-    private String name;
-    private KeyCode keyCode;
-    private int number;
+import java.io.File;
 
-    public Note(String name, KeyCode keyCode, int number) {
-        this.name = name;
-        this.keyCode = keyCode;
-        this.number = number;
+public class Note implements Playable{
+    private AudioClip audioClip;
+    private String path;
+    private String type_of_music;
+
+    //private double volume = 100.0;
+    public Note(String path) {
+        this.path = path;
+        this.audioClip = new AudioClip(new File(path).toURI().toString());
     }
+    public Note(String path, String type_of_note) {
+        this.path = path;
+        this.type_of_music = type_of_music;
+    }
+    public String getType_of_music() {
+        return type_of_music;
+    }
+
+
+    @Override
+    public void play(double volume) {;
+        audioClip.play(volume);
+        audioClip.setRate(1);
+    }
+
     @Override
     public void play() {
-        System.out.println(name + " " + keyCode + " " + number);
+        audioClip.play();
+        audioClip.setRate(1);
     }
+
 }

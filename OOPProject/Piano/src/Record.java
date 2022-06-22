@@ -1,5 +1,3 @@
-import javafx.scene.Node;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +7,21 @@ public class Record implements Playable {
     public Record(List<Note> listNotes) {
         this.listNotes = listNotes;
     }
+
+    public void addNote(Note note){
+        listNotes.add(note);
+    }
+    public List<Note> getListNotes() {
+        return listNotes;
+    }
+
+    @Override
+    public void play(double volume) {
+        for (Note note : listNotes) {
+            note.play(volume);
+        }
+    }
+
     @Override
     public void play() {
         for (Note note : listNotes) {
