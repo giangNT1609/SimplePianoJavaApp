@@ -1,30 +1,35 @@
-public class LoadPianoNote extends LoadNote {
-    public LoadPianoNote(String type_of_instrument) {
-          this.type_of_instrument = type_of_instrument;
-            noteC = new Note("src/notesound/piano/c4-middle-c.mp3");
-            noteD = new Note("src/notesound/piano/d4.mp3");
-            noteE = new Note("src/notesound/piano/e4.mp3");
-            noteF = new Note("src/notesound/piano/f4.wav");
-            noteG = new Note("src/notesound/piano/g4.mp3");
-            noteA = new Note("src/notesound/piano/a4.mp3");
-            noteB = new Note("src/notesound/piano/b4.mp3");
-            noteCSharp = new Note("src/notesound/piano/c-4.mp3");
-            noteDSharp = new Note("src/notesound/piano/d-4.mp3");
-            noteFSharp = new Note("src/notesound/piano/f-4.mp3");
-            noteGSharp = new Note("src/notesound/piano/g-4.mp3");
-            noteASharp = new Note("src/notesound/piano/a-4.mp3");
-            noteC1 = new Note("src/notesound/piano/c5.mp3");
-            noteD1 = new Note("src/notesound/piano/d5.mp3");
-            noteE1 = new Note("src/notesound/piano/e5.mp3");
-            noteF1 = new Note("src/notesound/piano/f5.mp3");
-            noteG1 = new Note("src/notesound/piano/g5.mp3");
-            noteA1 = new Note("src/notesound/piano/a5.mp3");
-            noteB1 = new Note("src/notesound/piano/b5.mp3");
-            noteCSharp1 = new Note("src/notesound/piano/c-5.mp3");
-            noteDSharp1 = new Note("src/notesound/piano/d-5.mp3");
-            noteFSharp1 = new Note("src/notesound/piano/f-5.mp3");
-            noteGSharp1 = new Note("src/notesound/piano/g-5.mp3");
-            noteASharp1 = new Note("src/notesound/piano/a-5.mp3");
-    }
 
+public class LoadPianoNote extends LoadNote {
+  private int volume;
+  public final int instrument = 0;
+  public LoadPianoNote(int volume) {
+      this.volume = volume;
+      noteC = new NewNote(60,this.getVolume(),instrument);
+      noteD = new NewNote(62,this.getVolume(),instrument);
+      noteE = new NewNote(64,this.getVolume(),instrument);
+      noteF = new NewNote(65,this.getVolume(),instrument);
+      noteG = new NewNote(67,this.getVolume(),instrument);
+      noteA = new NewNote(69,this.getVolume(),instrument);
+      noteB = new NewNote(71,this.getVolume(),instrument);
+      noteCSharp = new NewNote(61,this.getVolume(),instrument);
+      noteDSharp = new NewNote(63,this.getVolume(),instrument);
+      noteFSharp = new NewNote(66,this.getVolume(),instrument);
+      noteGSharp = new NewNote(68,this.getVolume(),instrument);
+      noteASharp = new NewNote(70,this.getVolume(),instrument);
+      noteC1 = new NewNote(72,this.getVolume(),instrument);
+      noteD1 = new NewNote(74,this.getVolume(),instrument);
+      noteE1 = new NewNote(76,this.getVolume(),instrument);
+      noteF1 = new NewNote(77,this.getVolume(),instrument);
+      noteG1 = new NewNote(79,this.getVolume(),instrument);
+      noteA1 = new NewNote(81,this.getVolume(),instrument);
+      noteB1 = new NewNote(83,this.getVolume(),instrument);
+      noteCSharp1 = new NewNote(73,this.getVolume(),instrument);
+      noteDSharp1 = new NewNote(75,this.getVolume(),instrument);
+      noteFSharp1 = new NewNote(78,this.getVolume(),instrument);
+      noteGSharp1 = new NewNote(80,this.getVolume(),instrument);
+      noteASharp1 = new NewNote(82,this.getVolume(),instrument);
+  }
+  public int getVolume() {
+    return volume;
+  }
 }

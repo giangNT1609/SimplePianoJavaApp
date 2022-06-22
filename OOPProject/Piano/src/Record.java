@@ -1,31 +1,31 @@
+import org.jfugue.pattern.Pattern;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Record implements Playable {
 
-    private List<Note> listNotes = new ArrayList<>();
-    public Record(List<Note> listNotes) {
+    private List<NewNote> listNotes = new ArrayList<>();
+    public Record(List<NewNote> listNotes) {
         this.listNotes = listNotes;
     }
 
-    public void addNote(Note note){
+    public void addNote(NewNote note){
         listNotes.add(note);
     }
-    public List<Note> getListNotes() {
+    public List<NewNote> getListNotes() {
         return listNotes;
     }
 
-    @Override
-    public void play(double volume) {
-        for (Note note : listNotes) {
-            note.play(volume);
-        }
-    }
 
     @Override
     public void play() {
-        for (Note note : listNotes) {
-            note.play();
-        }
+
     }
+
+    @Override
+    public void play(Pattern p) {
+
+    }
+
 }

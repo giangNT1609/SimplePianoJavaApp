@@ -85,71 +85,90 @@ public class MidiAppController implements Initializable {
     @FXML
     private Button btnG2Sharp;
     @FXML
-    private MenuItem btnDrum;
+    private MenuItem btnGuitar;
+    @FXML
+    private MenuItem btnPiano;
+    @FXML
+    private MenuItem btnTrombone;
+
+    @FXML
+    private MenuItem btnVolin;
 
     @FXML
     private Slider volumeSlider;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        loadNote = new LoadPianoNote("piano");
         volumeSlider.setValue(1*100);
+        loadNote = new LoadPianoNote((int)volumeSlider.getValue());
     }
     @FXML
     public void getVolume() {
         volume = volumeSlider.getValue()/100;
     }
     @FXML
-    private void BtnC1Pressed(ActionEvent event) {loadNote.getNoteC().play(volume);}
+    private void BtnC1Pressed(ActionEvent event) {loadNote.getNoteC().play();}
     @FXML
     private void BtnC1SharpPressed(ActionEvent event) {
-        loadNote.getNoteCSharp().play(volume);
+        loadNote.getNoteCSharp().play();
     }
     @FXML
-    private void BtnC2Pressed(ActionEvent event) { loadNote.getNoteC1().play(volume);}
+    private void BtnC2Pressed(ActionEvent event) { loadNote.getNoteC1().play();}
     @FXML
-    private void BtnC2SharpPressed(ActionEvent event) {loadNote.getNoteCSharp1().play(volume);}
+    private void BtnC2SharpPressed(ActionEvent event) {loadNote.getNoteCSharp1().play();}
     @FXML
-    private void BtnD1Pressed(ActionEvent event){loadNote.getNoteD().play(volume);}
+    private void BtnD1Pressed(ActionEvent event){loadNote.getNoteD().play();}
     @FXML
-    private void BtnD1SharpPressed(ActionEvent event){loadNote.getNoteDSharp().play(volume);}
+    private void BtnD1SharpPressed(ActionEvent event){loadNote.getNoteDSharp().play();}
     @FXML
-    private void BtnE1Pressed(ActionEvent event){loadNote.getNoteE().play(volume);};
+    private void BtnE1Pressed(ActionEvent event){loadNote.getNoteE().play();};
     @FXML
-    private void BtnF1Pressed(ActionEvent event){loadNote.getNoteF().play(volume);}
+    private void BtnF1Pressed(ActionEvent event){loadNote.getNoteF().play();}
     @FXML
-    private void BtnF1SharpPressed(ActionEvent event){loadNote.getNoteFSharp().play(volume);}
+    private void BtnF1SharpPressed(ActionEvent event){loadNote.getNoteFSharp().play();}
     @FXML
-    private void BtnG1Pressed(ActionEvent event){loadNote.getNoteG().play(volume);}
+    private void BtnG1Pressed(ActionEvent event){loadNote.getNoteG().play();}
     @FXML
-    private void BtnG1SharpPressed(ActionEvent event){loadNote.getNoteGSharp().play(volume);}
+    private void BtnG1SharpPressed(ActionEvent event){loadNote.getNoteGSharp().play();}
     @FXML
-    private void BtnA1Pressed(ActionEvent event){ loadNote.getNoteA().play(volume);}
+    private void BtnA1Pressed(ActionEvent event){ loadNote.getNoteA().play();}
     @FXML
-    private void BtnA1SharpPressed(ActionEvent event){loadNote.getNoteASharp().play(volume);}
+    private void BtnA1SharpPressed(ActionEvent event){loadNote.getNoteASharp().play();}
     @FXML
-    private void BtnB1Pressed(ActionEvent event){loadNote.getNoteB().play(volume);}
+    private void BtnB1Pressed(ActionEvent event){loadNote.getNoteB().play();}
     @FXML
-    private void BtnD2Pressed(ActionEvent event){loadNote.getNoteD1().play(volume);}
+    private void BtnD2Pressed(ActionEvent event){loadNote.getNoteD1().play();}
     @FXML
-    private void BtnD2SharpPressed(ActionEvent event){loadNote.getNoteDSharp1().play(volume);}
+    private void BtnD2SharpPressed(ActionEvent event){loadNote.getNoteDSharp1().play();}
     @FXML
-    private void BtnE2Pressed(ActionEvent event){loadNote.getNoteE1().play(volume);}
+    private void BtnE2Pressed(ActionEvent event){loadNote.getNoteE1().play();}
     @FXML
-    private void BtnF2Pressed(ActionEvent event){loadNote.getNoteF1().play(volume);}
+    private void BtnF2Pressed(ActionEvent event){loadNote.getNoteF1().play();}
     @FXML
-    private void BtnF2SharpPressed(ActionEvent event){loadNote.getNoteFSharp1().play(volume);}
+    private void BtnF2SharpPressed(ActionEvent event){loadNote.getNoteFSharp1().play();}
     @FXML
-    private void BtnG2Pressed(ActionEvent event){loadNote.getNoteG1().play(volume);}
+    private void BtnG2Pressed(ActionEvent event){loadNote.getNoteG1().play();}
     @FXML
-    private void BtnG2SharpPressed(ActionEvent event){loadNote.getNoteGSharp1().play(volume);}
+    private void BtnG2SharpPressed(ActionEvent event){loadNote.getNoteGSharp1().play();}
     @FXML
-    private void BtnA2Pressed(ActionEvent event){loadNote.getNoteA1().play(volume);}
+    private void BtnA2Pressed(ActionEvent event){loadNote.getNoteA1().play();}
     @FXML
-    private void BtnA2SharpPressed(ActionEvent event){loadNote.getNoteASharp1().play(volume);}
+    private void BtnA2SharpPressed(ActionEvent event){loadNote.getNoteASharp1().play();}
     @FXML
-    private void BtnB2Pressed(ActionEvent event){loadNote.getNoteB1().play(volume);}
+    private void BtnB2Pressed(ActionEvent event){loadNote.getNoteB1().play();}
     @FXML
-    private void loadDrum(ActionEvent event){
-        loadNote = new LoadDrumNote("drum");
+    private void loadGuitar(ActionEvent event){
+        loadNote = new LoadGuitarNote((int) volumeSlider.getValue());
+    }
+    @FXML
+    private void loadViolin(ActionEvent event){
+        loadNote = new LoadViolinNote((int) volumeSlider.getValue());
+    }
+    @FXML
+    private void loadPiano(ActionEvent event){
+        loadNote = new LoadPianoNote((int) volumeSlider.getValue());
+    }
+    @FXML
+    private void loadTrombone(ActionEvent event){
+        loadNote = new LoadTrombone((int) volumeSlider.getValue());
     }
 }

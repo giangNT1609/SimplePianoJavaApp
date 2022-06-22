@@ -14,11 +14,7 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
+          <Menu mnemonicParsing="false" text="File" />
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
@@ -26,8 +22,10 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Change Instrument">
               <items>
-                <MenuItem mnemonicParsing="false" text="Piano" />
-                  <MenuItem fx:id="btnDrum" mnemonicParsing="false" onAction="#loadDrum" text="Dump" />
+                <MenuItem fx:id="btnPiano" mnemonicParsing="false" onAction="#loadPiano" text="Piano" />
+                  <MenuItem fx:id="btnGuitar" mnemonicParsing="false" onAction="#loadGuitar" text="Guitar" />
+                  <MenuItem fx:id="btnVolin" mnemonicParsing="false" onAction="#loadViolin" text="Violin" />
+                  <MenuItem fx:id="btnTrombone" mnemonicParsing="false" onAction="#loadTrombone" text="Trombone" />
               </items>
             </Menu>
         </menus>
@@ -36,7 +34,7 @@
    <center>
       <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="395.0" prefWidth="857.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="327.0" prefHeight="55.0" prefWidth="203.0" text="Piano">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="-7.0" prefHeight="55.0" prefWidth="203.0" text="Midi Electric Piano">
                <font>
                   <Font size="24.0" />
                </font>
@@ -55,7 +53,7 @@
             <Button fx:id="btnG2" layoutX="640.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnG2Pressed" prefHeight="181.0" prefWidth="55.0" text="G2" />
             <Button fx:id="btnA2" layoutX="695.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnA2Pressed" prefHeight="181.0" prefWidth="55.0" text="A2" />
             <Button fx:id="btnB2" layoutX="750.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnB2Pressed" prefHeight="181.0" prefWidth="55.0" text="B2" />
-            <Button layoutX="506.0" layoutY="27.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="112.0" style="-fx-background-color: red;" text="Record" textFill="WHITE">
+            <Button layoutX="534.0" layoutY="47.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: red;" text="Record" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -76,7 +74,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button layoutX="661.0" layoutY="27.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="112.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE">
+            <Button layoutX="678.0" layoutY="47.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>

@@ -1,123 +1,121 @@
-
 public abstract class LoadNote {
-    String type_of_instrument;
-    Note noteC;
-    Note noteD;
-    Note noteE;
-    Note noteF;
-    Note noteG;
-    Note noteA;
-    Note noteB;
-    Note noteCSharp;
-    Note noteDSharp;
-    Note noteFSharp;
-    Note noteGSharp ;
-    Note noteASharp;
-    Note noteC1;
-    Note noteD1;
-    Note noteE1;
-    Note noteF1;
-    Note noteG1;
-    Note noteA1;
-    Note noteB1;
-    Note noteCSharp1;
-    Note noteDSharp1;
-    Note noteFSharp1;
-    Note noteGSharp1 ;
-    Note noteASharp1;
+    NewNote noteC;
+    NewNote noteD;
+    NewNote noteE;
+    NewNote noteF;
+    NewNote noteG;
+    NewNote noteA;
+    NewNote noteB;
+    NewNote noteCSharp;
+    NewNote noteDSharp;
+    NewNote noteFSharp;
+    NewNote noteGSharp ;
+    NewNote noteASharp;
+    NewNote noteC1;
+    NewNote noteD1;
+    NewNote noteE1;
+    NewNote noteF1;
+    NewNote noteG1;
+    NewNote noteA1;
+    NewNote noteB1;
+    NewNote noteCSharp1;
+    NewNote noteDSharp1;
+    NewNote noteFSharp1;
+    NewNote noteGSharp1 ;
+    NewNote noteASharp1;
 
-    public Note getNoteC() {
+    public NewNote getNoteC() {
         return noteC;
     }
 
-    public Note getNoteD() {
+    public NewNote getNoteD() {
         return noteD;
     }
 
-    public Note getNoteE() {
+    public NewNote getNoteE() {
         return noteE;
     }
 
-    public Note getNoteF() {
+    public NewNote getNoteF() {
         return noteF;
     }
 
-    public Note getNoteG() {
+    public NewNote getNoteG() {
         return noteG;
     }
 
 
-    public Note getNoteA() {
+    public NewNote getNoteA() {
         return noteA;
     }
 
-    public Note getNoteB() {
+    public NewNote getNoteB() {
         return noteB;
     }
-    public Note getNoteCSharp() {
+    public NewNote getNoteCSharp() {
         return noteCSharp;
     }
 
-    public Note getNoteDSharp() {
+    public NewNote getNoteDSharp() {
         return noteDSharp;
     }
 
-    public Note getNoteFSharp() {
+    public NewNote getNoteFSharp() {
         return noteFSharp;
     }
 
-    public Note getNoteGSharp() {
+    public NewNote getNoteGSharp() {
         return noteGSharp;
     }
 
-    public Note getNoteASharp() {
+    public NewNote getNoteASharp() {
         return noteASharp;
     }
-    public Note getNoteC1() {
+    public NewNote getNoteC1() {
         return noteC1;
     }
 
-    public Note getNoteD1() {
+    public NewNote getNoteD1() {
         return noteD1;
     }
 
-    public Note getNoteE1() {
+    public NewNote getNoteE1() {
         return noteE1;
     }
 
-    public Note getNoteF1() {
+    public NewNote getNoteF1() {
         return noteF1;
     }
 
-    public Note getNoteG1() {
+    public NewNote getNoteG1() {
         return noteG1;
     }
 
-    public Note getNoteA1() {
+    public NewNote getNoteA1() {
         return noteA1;
     }
 
-    public Note getNoteB1() {
+    public NewNote getNoteB1() {
         return noteB1;
     }
 
-    public Note getNoteCSharp1() {
+    public NewNote getNoteCSharp1() {
         return noteCSharp1;
     }
 
-    public Note getNoteDSharp1() {
+    public NewNote getNoteDSharp1() {
         return noteDSharp1;
     }
 
-    public Note getNoteFSharp1() {
+    public NewNote getNoteFSharp1() {
         return noteFSharp1;
     }
 
-    public Note getNoteGSharp1() {
+    public NewNote getNoteGSharp1() {
         return noteGSharp1;
     }
 
-    public Note getNoteASharp1() {
+    public NewNote getNoteASharp1() {
         return noteASharp1;
     }
 
