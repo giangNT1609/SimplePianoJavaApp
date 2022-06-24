@@ -1,10 +1,14 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Slider;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -41,7 +45,9 @@ public class MidiAppController implements Initializable {
     private Button btnC2Sharp;
 
     @FXML
-    private Button btnC3;
+    private MenuItem btnAboutUs;
+    @FXML
+    private MenuItem btnInstruction;
 
     @FXML
     private Button btnD1;
@@ -98,12 +104,14 @@ public class MidiAppController implements Initializable {
     private Slider volumeSlider;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        volumeSlider.setValue(1*100);
+        volumeSlider.setValue(volume);
         loadNote = new LoadPianoNote((int)volumeSlider.getValue());
     }
     @FXML
     public void getVolume() {
-        volume = volumeSlider.getValue()/100;
+        volume = (volumeSlider.getValue()/100)*127;
+        System.out.println(volume);
+        loadNote.setVolume((int) volume);
     }
     @FXML
     private void BtnC1Pressed(ActionEvent event) {loadNote.getNoteC().play();}
@@ -157,18 +165,32 @@ public class MidiAppController implements Initializable {
     private void BtnB2Pressed(ActionEvent event){loadNote.getNoteB1().play();}
     @FXML
     private void loadGuitar(ActionEvent event){
-        loadNote = new LoadGuitarNote((int) volumeSlider.getValue());
+        loadNote = new LoadGuitarNote((int) volume);
     }
     @FXML
     private void loadViolin(ActionEvent event){
-        loadNote = new LoadViolinNote((int) volumeSlider.getValue());
+        loadNote = new LoadViolinNote((int) volume);
     }
     @FXML
     private void loadPiano(ActionEvent event){
-        loadNote = new LoadPianoNote((int) volumeSlider.getValue());
+        loadNote = new LoadPianoNote((int) volume);
     }
     @FXML
     private void loadTrombone(ActionEvent event){
-        loadNote = new LoadTrombone((int) volumeSlider.getValue());
+        loadNote = new LoadTrombone((int) volume);
+    }
+    @FXML
+    private void showAboutUs(ActionEvent event) throws IOException {
+        Stage newStage = new Stage();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/aboutUs.fxml"));
+        newStage.setScene(new Scene(loader.load()));
+        newStage.show();
+    }
+    @FXML
+    private void showInstruction(ActionEvent event) throws IOException {
+        Stage newStage = new Stage();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/instruction.fxml"));
+        newStage.setScene(new Scene(loader.load()));
+        newStage.show();
     }
 }

@@ -1,5 +1,3 @@
-import org.jfugue.pattern.Pattern;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,11 +18,6 @@ public class Record implements Playable {
 
     @Override
     public void play() {
-
-    }
-
-    @Override
-    public void play(Pattern p) {
 
     }
 

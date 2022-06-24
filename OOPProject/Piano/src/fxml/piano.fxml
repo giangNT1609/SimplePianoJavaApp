@@ -17,7 +17,8 @@
           <Menu mnemonicParsing="false" text="File" />
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem fx:id="btnAboutUs" mnemonicParsing="false" onAction="#showAboutUs" text="About" />
+                  <MenuItem fx:id="btnInstruction" mnemonicParsing="false" onAction="#showInstruction" text="Instruction" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Change Instrument">

@@ -11,7 +11,7 @@ public class MidiApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/piano.fxml"));
-        stage.setTitle("Piano");
+        stage.setTitle("Midi Electric Piano");
         stage.setScene(new Scene(loader.load()));
         stage.show();
         stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
