@@ -1,4 +1,5 @@
 public abstract class LoadNote {
+    int volume;
     NewNote noteC;
     NewNote noteD;
     NewNote noteE;
@@ -119,4 +120,6 @@ public abstract class LoadNote {
         return noteASharp1;
     }
 
+    public void setVolume(int volume) {
+    }
 }

@@ -22,10 +22,4 @@ public class NewNote implements Playable {
         Player player = new Player();
         player.play(this.pattern);
     }
-
-    @Override
-    public void play(Pattern p) {
-        Player player = new Player();
-        player.play(this.pattern);
-    }
 }
