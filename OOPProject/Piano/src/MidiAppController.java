@@ -346,8 +346,8 @@ public class MidiAppController implements Initializable {
     			isRecord = false;
     			btnRecord.setStyle("-fx-background-color: red;");
     			RecordList.addToRecordList(aRecord);
-    			RecordList.printOut();
-    			System.out.println("Stop Recording");
+    			//RecordList.printOut();
+    			//System.out.println("Stop Recording");
     		}
     	}
     }

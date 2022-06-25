@@ -14,7 +14,10 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File" />
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="changeRecordSc" mnemonicParsing="false" onAction="#changeScreen" text="Records" />
+               </items></Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem fx:id="btnAboutUs" mnemonicParsing="false" onAction="#showAboutUs" text="About" />
@@ -54,7 +57,7 @@
             <Button fx:id="btnG2" layoutX="640.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnG2Pressed" prefHeight="181.0" prefWidth="55.0" text="G2" />
             <Button fx:id="btnA2" layoutX="695.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnA2Pressed" prefHeight="181.0" prefWidth="55.0" text="A2" />
             <Button fx:id="btnB2" layoutX="750.0" layoutY="198.0" mnemonicParsing="false" onAction="#BtnB2Pressed" prefHeight="181.0" prefWidth="55.0" text="B2" />
-            <Button layoutX="534.0" layoutY="47.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: red;" text="Record" textFill="WHITE">
+            <Button fx:id="btnRecord" layoutX="534.0" layoutY="47.0" mnemonicParsing="false" onAction="#btnClk" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: red;" text="Record" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -75,7 +78,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button layoutX="678.0" layoutY="47.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE">
+            <Button fx:id="btnStop" layoutX="678.0" layoutY="47.0" mnemonicParsing="false" onAction="#btnClk" prefHeight="50.0" prefWidth="110.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
