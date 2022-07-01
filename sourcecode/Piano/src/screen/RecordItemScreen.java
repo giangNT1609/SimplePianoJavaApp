@@ -1,4 +1,6 @@
-package record;
+package screen;
+
+import record.Record;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,7 +27,6 @@ public class RecordItemScreen extends JPanel{
 		
     }
 	private class ButtonLitener implements ActionListener {
-
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub

@@ -1,4 +1,7 @@
-package record;
+package screen;
+
+import record.Record;
+import record.RecordList;
 
 import javax.swing.*;
 import java.awt.*;

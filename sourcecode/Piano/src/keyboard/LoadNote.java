@@ -1,127 +1,224 @@
 package keyboard;
 
+import java.util.ArrayList;
+
 public abstract class LoadNote {
     int volume;
-    NewNote noteC;
-    NewNote noteD;
-    NewNote noteE;
-    NewNote noteF;
-    NewNote noteG;
-    NewNote noteA;
-    NewNote noteB;
-    NewNote noteCSharp;
-    NewNote noteDSharp;
-    NewNote noteFSharp;
-    NewNote noteGSharp ;
-    NewNote noteASharp;
-    NewNote noteC1;
-    NewNote noteD1;
-    NewNote noteE1;
-    NewNote noteF1;
-    NewNote noteG1;
-    NewNote noteA1;
-    NewNote noteB1;
-    NewNote noteCSharp1;
-    NewNote noteDSharp1;
-    NewNote noteFSharp1;
-    NewNote noteGSharp1 ;
-    NewNote noteASharp1;
+    ArrayList<NewNote> notes = new ArrayList<NewNote>();
 
     public NewNote getNoteC() {
-        return noteC;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 60) {
+                return i;
+            }
+        }
+        return null;
     }
-
     public NewNote getNoteD() {
-        return noteD;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 62) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteE() {
-        return noteE;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 64) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteF() {
-        return noteF;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 65) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteG() {
-        return noteG;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 67) {
+                return i;
+            }
+        }
+        return null;
     }
-
-
     public NewNote getNoteA() {
-        return noteA;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 69) {
+                return i;
+            }
+        }
+        return null;
     }
-
     public NewNote getNoteB() {
-        return noteB;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 71) {
+                return i;
+            }
+        }
+        return null;
     }
     public NewNote getNoteCSharp() {
-        return noteCSharp;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 61) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteDSharp() {
-        return noteDSharp;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 63) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteFSharp() {
-        return noteFSharp;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 66) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteGSharp() {
-        return noteGSharp;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 68) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteASharp() {
-        return noteASharp;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 70) {
+                return i;
+            }
+        }
+        return null;
     }
     public NewNote getNoteC1() {
-        return noteC1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 72) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteD1() {
-        return noteD1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 74) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteE1() {
-        return noteE1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 76) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteF1() {
-        return noteF1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 77) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteG1() {
-        return noteG1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 79) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteA1() {
-        return noteA1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 81) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteB1() {
-        return noteB1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 83) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteCSharp1() {
-        return noteCSharp1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 73) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteDSharp1() {
-        return noteDSharp1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 75) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteFSharp1() {
-        return noteFSharp1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 78) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteGSharp1() {
-        return noteGSharp1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 80) {
+                return i;
+            }
+        }
+        return null;
     }
 
     public NewNote getNoteASharp1() {
-        return noteASharp1;
+        for(NewNote i : notes) {
+            if (i.getTitle() == 82) {
+                return i;
+            }
+        }
+        return null;
     }
-
     public void setVolume(int volume) {
+        for(NewNote i : notes) {
+            i.setVolume(volume);
+        }
     }
 }
