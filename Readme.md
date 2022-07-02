@@ -26,5 +26,8 @@ Vu Thanh Hai:
 -	Test the application.
 
 
+Link demo:
+https://drive.google.com/drive/folders/1TFkOjVpH8tt_QFoTXQyaMbbIgBfutfoF
+
 
  
