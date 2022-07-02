@@ -5,40 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd834db-fed9-4980-8509-5acb2ed79c39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/OOPProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/OOPProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/MidiApp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/MidiApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/MidiAppController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/fxml/aboutUs.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/fxml/instruction.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/fxml/piano.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadGuitarNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadGuitarNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadPianoNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadPianoNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/NewNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/NewNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/record/RecordItemScreen$ButtonLitener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/record/RecordItemScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/record/RecordList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/record/RecordList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/record/RecordScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/test/TestNote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/MidiApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidiAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/MidiAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/aboutUs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/fxml/aboutUs.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/instruction.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/fxml/instruction.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/piano.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/fxml/piano.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadGuitarNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadGuitarNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadPianoNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadPianoNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadTrombone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadTrombone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadViolinNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadViolinNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/NewNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/NewNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/record/RecordItemScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/RecordItemScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/record/RecordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/record/RecordList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/record/RecordScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/RecordScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/RecordScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/RecordScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/RecordScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/RecordScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +166,8 @@
       <workItem from="1656606140742" duration="504000" />
       <workItem from="1656606940653" duration="6340000" />
       <workItem from="1656677222620" duration="941000" />
+      <workItem from="1656758613570" duration="9185000" />
+      <workItem from="1656770842210" duration="1926000" />
     </task>
     <servers />
   </component>
