@@ -21,7 +21,7 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class MidiAppController implements Initializable {
     private double volume = 100.0;
-    private LoadNote loadNote;
+    private LoadKeyboard loadKeyboard;
     private boolean isRecord = false;
     private Record aRecord;
 
@@ -123,20 +123,20 @@ public class MidiAppController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         volumeSlider.setValue(volume);
-        loadNote = new LoadPianoNote((int)volumeSlider.getValue()/100*127);
+        loadKeyboard = new LoadPianoKeyboard((int)volumeSlider.getValue()/100*127);
     }
     @FXML
     public void getVolume() {
         volume = (volumeSlider.getValue()/100)*127;
         System.out.println(volume);
-        loadNote.setVolume((int) volume);
+        loadKeyboard.setVolume((int) volume);
     }
     @FXML
     private void BtnC1Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteC().play();
+            loadKeyboard.getNoteC().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteC());
+                aRecord.addNote(loadKeyboard.getNoteC());
             }
         }catch(NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -145,9 +145,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnC1SharpPressed(ActionEvent event) throws NullPointerException{
         try {
-            loadNote.getNoteCSharp().play();
+            loadKeyboard.getNoteCSharp().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteCSharp());
+                aRecord.addNote(loadKeyboard.getNoteCSharp());
             }
         }
         catch(NullPointerException e){
@@ -158,9 +158,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnC2Pressed(ActionEvent event) throws NullPointerException{
             try {
-                loadNote.getNoteC1().play();
+                loadKeyboard.getNoteC1().play();
                 if (isRecord) {
-                    aRecord.addNote(loadNote.getNoteC1());
+                    aRecord.addNote(loadKeyboard.getNoteC1());
                 }
             } catch (NullPointerException e) {
                 showMessageDialog(null, "The note is not loaded");
@@ -169,9 +169,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnC2SharpPressed(ActionEvent event) throws NullPointerException{
         try {
-            loadNote.getNoteCSharp1().play();
+            loadKeyboard.getNoteCSharp1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteCSharp1());
+                aRecord.addNote(loadKeyboard.getNoteCSharp1());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -180,9 +180,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnD1Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteD().play();
+            loadKeyboard.getNoteD().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteD());
+                aRecord.addNote(loadKeyboard.getNoteD());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -191,9 +191,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnD1SharpPressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteDSharp().play();
+            loadKeyboard.getNoteDSharp().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteDSharp());
+                aRecord.addNote(loadKeyboard.getNoteDSharp());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -202,9 +202,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnE1Pressed(ActionEvent event)throws NullPointerException{
         try{
-            loadNote.getNoteE().play();
+            loadKeyboard.getNoteE().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteE());
+                aRecord.addNote(loadKeyboard.getNoteE());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -213,9 +213,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnF1Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteF().play();
+            loadKeyboard.getNoteF().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteF());
+                aRecord.addNote(loadKeyboard.getNoteF());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -224,9 +224,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnF1SharpPressed(ActionEvent event) throws NullPointerException{
         try {
-            loadNote.getNoteFSharp().play();
+            loadKeyboard.getNoteFSharp().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteFSharp());
+                aRecord.addNote(loadKeyboard.getNoteFSharp());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -235,9 +235,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnG1Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteG().play();
+            loadKeyboard.getNoteG().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteG());
+                aRecord.addNote(loadKeyboard.getNoteG());
             }
         }catch (NullPointerException e){
             showMessageDialog(null, "The note is not loaded");
@@ -246,9 +246,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnG1SharpPressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteGSharp().play();
+            loadKeyboard.getNoteGSharp().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteGSharp());
+                aRecord.addNote(loadKeyboard.getNoteGSharp());
             }
         }
         catch (NullPointerException e){
@@ -258,9 +258,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnA1Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteA().play();
+            loadKeyboard.getNoteA().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteA());
+                aRecord.addNote(loadKeyboard.getNoteA());
             }
         }
         catch (NullPointerException e){
@@ -270,9 +270,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnA1SharpPressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteASharp().play();
+            loadKeyboard.getNoteASharp().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteASharp());
+                aRecord.addNote(loadKeyboard.getNoteASharp());
             }
         }
         catch (NullPointerException e){
@@ -282,9 +282,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnB1Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteB().play();
+            loadKeyboard.getNoteB().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteB());
+                aRecord.addNote(loadKeyboard.getNoteB());
             }
         }
         catch (NullPointerException e) {
@@ -294,9 +294,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnD2Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteD1().play();
+            loadKeyboard.getNoteD1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteD1());
+                aRecord.addNote(loadKeyboard.getNoteD1());
             }
         }
         catch (NullPointerException e){
@@ -306,9 +306,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnD2SharpPressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteDSharp1().play();
+            loadKeyboard.getNoteDSharp1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteDSharp1());
+                aRecord.addNote(loadKeyboard.getNoteDSharp1());
             }
         }
         catch (NullPointerException e){
@@ -318,9 +318,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnE2Pressed(ActionEvent event) throws NullPointerException{
         try {
-            loadNote.getNoteE1().play();
+            loadKeyboard.getNoteE1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteE1());
+                aRecord.addNote(loadKeyboard.getNoteE1());
             }
         }
         catch (NullPointerException e){
@@ -330,9 +330,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnF2Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteF1().play();
+            loadKeyboard.getNoteF1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteF1());
+                aRecord.addNote(loadKeyboard.getNoteF1());
             }
         }
         catch (NullPointerException e){
@@ -342,9 +342,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnF2SharpPressed(ActionEvent event) throws  NullPointerException{
         try{
-            loadNote.getNoteFSharp1().play();
+            loadKeyboard.getNoteFSharp1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteFSharp1());
+                aRecord.addNote(loadKeyboard.getNoteFSharp1());
             }
         }
         catch (NullPointerException e){
@@ -354,9 +354,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnG2Pressed(ActionEvent event) throws NullPointerException{
         try {
-            loadNote.getNoteG1().play();
+            loadKeyboard.getNoteG1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteG1());
+                aRecord.addNote(loadKeyboard.getNoteG1());
             }
         }
         catch (NullPointerException e){
@@ -366,9 +366,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnG2SharpPressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteGSharp1().play();
+            loadKeyboard.getNoteGSharp1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteGSharp1());
+                aRecord.addNote(loadKeyboard.getNoteGSharp1());
             }
         }
         catch (NullPointerException e){
@@ -378,9 +378,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnA2Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteA1().play();
+            loadKeyboard.getNoteA1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteA1());
+                aRecord.addNote(loadKeyboard.getNoteA1());
             }
         }
         catch (NullPointerException e){
@@ -390,9 +390,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnA2SharpPressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteASharp1().play();
+            loadKeyboard.getNoteASharp1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteASharp1());
+                aRecord.addNote(loadKeyboard.getNoteASharp1());
             }
         }
         catch (NullPointerException e){
@@ -402,9 +402,9 @@ public class MidiAppController implements Initializable {
     @FXML
     private void BtnB2Pressed(ActionEvent event) throws NullPointerException{
         try{
-            loadNote.getNoteB1().play();
+            loadKeyboard.getNoteB1().play();
             if(isRecord) {
-                aRecord.addNote(loadNote.getNoteB1());
+                aRecord.addNote(loadKeyboard.getNoteB1());
             }
         }
         catch (NullPointerException e){
@@ -414,19 +414,19 @@ public class MidiAppController implements Initializable {
 
     @FXML
     private void loadGuitar(ActionEvent event){
-        loadNote = new LoadGuitarNote((int) volume);
+        loadKeyboard = new LoadGuitarKeyboard((int) volume);
     }
     @FXML
     private void loadViolin(ActionEvent event){
-        loadNote = new LoadViolinNote((int) volume);
+        loadKeyboard = new LoadViolinKeyboard((int) volume);
     }
     @FXML
     private void loadPiano(ActionEvent event){
-        loadNote = new LoadPianoNote((int) volume);
+        loadKeyboard = new LoadPianoKeyboard((int) volume);
     }
     @FXML
     private void loadTrombone(ActionEvent event){
-        loadNote = new LoadTrombone((int) volume);
+        loadKeyboard = new LoadTromboneKeyboard((int) volume);
     }
     @FXML
     private void showAboutUs(ActionEvent event) throws IOException{

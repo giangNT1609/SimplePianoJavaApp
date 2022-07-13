@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Piano:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd834db-fed9-4980-8509-5acb2ed79c39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/keyboard/LoadTromboneKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Desgin/ClassDiagramDetail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/Report-OOP-Group3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/Report-OOP-Group3.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../report/~$port-OOP-Group3.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/MidiApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/RecordScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/RecordScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/RecordScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/RecordScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadGuitarNote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadNote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadPianoNote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinNote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/MidiAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/MidiAppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadGuitarNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadGuitarKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadPianoNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadPianoKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadTrombone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadViolinNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadViolinKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/NewNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/record/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/record/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/MidiAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/MidiAppController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +67,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OOP_lab/Mini-project/jfugue-5.0.9.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
@@ -72,15 +90,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.screen.MidiApp">
-    <configuration name="instrument.LoadGuitarNote" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="instrument.LoadGuitarNote" />
+    <configuration name="Note" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="keyboard.Note" />
       <module name="Piano" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="keyboard.NewNote" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="keyboard.NewNote" />
+    <configuration name="instrument.LoadGuitarNote" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="instrument.LoadGuitarNote" />
       <module name="Piano" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,8 +133,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Note" />
       <item itemvalue="Application.screen.MidiApp" />
-      <item itemvalue="Application.keyboard.NewNote" />
       <item itemvalue="Application.test.TestNote" />
       <item itemvalue="Application.instrument.LoadGuitarNote" />
       <item itemvalue="Application.newNote" />
@@ -125,7 +143,6 @@
       <list>
         <item itemvalue="Application.screen.MidiApp" />
         <item itemvalue="Application.test.TestNote" />
-        <item itemvalue="Application.keyboard.NewNote" />
         <item itemvalue="Application.instrument.LoadGuitarNote" />
         <item itemvalue="Application.newNote" />
       </list>
@@ -168,6 +185,10 @@
       <workItem from="1656677222620" duration="941000" />
       <workItem from="1656758613570" duration="9185000" />
       <workItem from="1656770842210" duration="1926000" />
+      <workItem from="1656860787131" duration="85000" />
+      <workItem from="1657097464921" duration="4420000" />
+      <workItem from="1657686917074" duration="5081000" />
+      <workItem from="1657719549220" duration="5992000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 package record;
 
-import keyboard.NewNote;
+import keyboard.Note;
 import keyboard.Playable;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Record implements Playable {
 
-    private List<NewNote> listNotes = new ArrayList<>();
+    private List<Note> listNotes = new ArrayList<>();
     private int id;
     private static int count = 0;
     
@@ -21,17 +21,17 @@ public class Record implements Playable {
     	return this.id;
     }
 
-    public void addNote(NewNote note){
+    public void addNote(Note note){
         listNotes.add(note);
     }
-    public List<NewNote> getListNotes() {
+    public List<Note> getListNotes() {
         return listNotes;
     }
 
 
     @Override
     public void play() {
-    	for(NewNote i : listNotes) {
+    	for(Note i : listNotes) {
     		i.play();
     	}
     }

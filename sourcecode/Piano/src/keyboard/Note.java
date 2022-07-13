@@ -3,7 +3,7 @@ package keyboard;
 import org.jfugue.pattern.Pattern;
 import org.jfugue.player.Player;
 
-public class NewNote implements Playable {
+public class Note implements Playable {
     private int title;
     private int volume;
     private int instrument;
@@ -37,7 +37,7 @@ public class NewNote implements Playable {
         String s = ":CON(7,"+a+") I"+c+" " + b;
         this.pattern  = new Pattern(s);
     }
-    public NewNote(int title, int volume, int instrument) {
+    public Note(int title, int volume, int instrument) {
         this.title = title;
         this.volume = volume;
         this.instrument = instrument;
