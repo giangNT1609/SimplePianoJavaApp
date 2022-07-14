@@ -3,9 +3,8 @@ package keyboard;
 import java.util.ArrayList;
 
 public class LoadPianoKeyboard extends LoadKeyboard {
-
-  private final int instrument = 0;
   public LoadPianoKeyboard(int volume) {
+    this.instrument = 0;
     this.volume = volume;
     ArrayList<Note> pianoNotes = new ArrayList<Note>();
     Note noteC = new Note(60,this.getVolume(),instrument);

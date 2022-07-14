@@ -3,11 +3,11 @@ package keyboard;
 import java.util.ArrayList;
 
 public class LoadGuitarKeyboard extends LoadKeyboard {
-    private final int instrument = 24 ;
     public int getVolume() {
         return volume;
     }
     public LoadGuitarKeyboard(int volume){
+        this.instrument = 24;
         this.volume = volume;
         ArrayList<Note> guitarNotes = new ArrayList<Note>();
         Note noteC = new Note(60,this.getVolume(),instrument);

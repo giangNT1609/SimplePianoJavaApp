@@ -10,25 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd834db-fed9-4980-8509-5acb2ed79c39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/keyboard/LoadTromboneKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Desgin/ClassDiagramDetail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../presentation/OOP.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../presentation/OOP.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../report/Report-OOP-Group3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../report/Report-OOP-Group3.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../report/~$port-OOP-Group3.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadGuitarNote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadNote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadPianoNote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinNote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadGuitarKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadGuitarKeyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadKeyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadPianoKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadPianoKeyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadTrombone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/keyboard/LoadViolinKeyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/keyboard/NewNote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Piano/record/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/record/Record.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Piano/screen/MidiAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Piano/screen/MidiAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadGuitarNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadGuitarKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadPianoNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadPianoKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadTrombone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadViolinNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadViolinKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard/NewNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/record/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/record/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/MidiAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/MidiAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadGuitarKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadGuitarKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadPianoKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadPianoKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadTromboneKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadTromboneKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboard/LoadViolinKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard/LoadViolinKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/fxml/instruction.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/fxml/instruction.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +187,8 @@
       <workItem from="1657097464921" duration="4420000" />
       <workItem from="1657686917074" duration="5081000" />
       <workItem from="1657719549220" duration="5992000" />
+      <workItem from="1657782765358" duration="5864000" />
+      <workItem from="1657802468771" duration="1591000" />
     </task>
     <servers />
   </component>

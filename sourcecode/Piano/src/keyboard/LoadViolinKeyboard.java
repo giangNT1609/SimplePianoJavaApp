@@ -3,10 +3,8 @@ package keyboard;
 import java.util.ArrayList;
 
 public class LoadViolinKeyboard extends LoadKeyboard {
-
-  public final int instrument = 40;
-
   public LoadViolinKeyboard(int volume) {
+    this.instrument = 40;
     this.volume = volume;
     ArrayList<Note> violinNotes = new ArrayList<Note>();
     Note noteC = new Note(60,this.getVolume(),instrument);
@@ -16,11 +14,6 @@ public class LoadViolinKeyboard extends LoadKeyboard {
     Note noteG = new Note(67,this.getVolume(),instrument);
     Note noteA = new Note(69,this.getVolume(),instrument);
     Note noteB = new Note(71,this.getVolume(),instrument);
-    //NewNote noteCSharp = new NewNote(61,this.getVolume(),instrument);
-    //NewNote noteDSharp = new NewNote(63,this.getVolume(),instrument);
-    //NewNote noteFSharp = new NewNote(66,this.getVolume(),instrument);
-    //NewNote noteGSharp = new NewNote(68,this.getVolume(),instrument);
-    //NewNote noteASharp = new NewNote(70,this.getVolume(),instrument);
     Note noteC1 = new Note(72,this.getVolume(),instrument);
     Note noteD1 = new Note(74,this.getVolume(),instrument);
     Note noteE1 = new Note(76,this.getVolume(),instrument);
@@ -40,11 +33,6 @@ public class LoadViolinKeyboard extends LoadKeyboard {
     violinNotes.add(noteG);
     violinNotes.add(noteA);
     violinNotes.add(noteB);
-    //violinNotes.add(noteCSharp);
-    //violinNotes.add(noteDSharp);
-    //violinNotes.add(noteFSharp);
-    //violinNotes.add(noteGSharp);
-    //violinNotes.add(noteASharp);
     violinNotes.add(noteC1);
     violinNotes.add(noteD1);
     violinNotes.add(noteE1);

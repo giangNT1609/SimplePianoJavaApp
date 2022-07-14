@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public abstract class LoadKeyboard {
     int volume;
+    int instrument;
     ArrayList<Note> notes = new ArrayList<Note>();
 
     public Note getNoteC() {

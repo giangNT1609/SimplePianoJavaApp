@@ -3,9 +3,8 @@ package keyboard;
 import java.util.ArrayList;
 
 public class LoadTromboneKeyboard extends LoadKeyboard {
-
-    public final int instrument = 57;
     public LoadTromboneKeyboard(int volume) {
+        this.instrument = 57;
         this.volume = volume;
         ArrayList<Note> tromboneNotes = new ArrayList<Note>();
         Note noteC = new Note(60,this.getVolume(),instrument);
@@ -27,11 +26,6 @@ public class LoadTromboneKeyboard extends LoadKeyboard {
         Note noteG1 = new Note(79,this.getVolume(),instrument);
         Note noteA1 = new Note(81,this.getVolume(),instrument);
         Note noteB1 = new Note(83,this.getVolume(),instrument);
-        //NewNote noteCSharp1 = new NewNote(73,this.getVolume(),instrument);
-        //NewNote noteDSharp1 = new NewNote(75,this.getVolume(),instrument);
-        //NewNote noteFSharp1 = new NewNote(78,this.getVolume(),instrument);
-        //NewNote noteGSharp1 = new NewNote(80,this.getVolume(),instrument);
-        //NewNote noteASharp1 = new NewNote(82,this.getVolume(),instrument);
         tromboneNotes.add(noteC);
         tromboneNotes.add(noteD);
         tromboneNotes.add(noteE);
@@ -51,11 +45,6 @@ public class LoadTromboneKeyboard extends LoadKeyboard {
         tromboneNotes.add(noteG1);
         tromboneNotes.add(noteA1);
         tromboneNotes.add(noteB1);
-        //tromboneNotes.add(noteCSharp1);
-        //tromboneNotes.add(noteDSharp1);
-        //tromboneNotes.add(noteFSharp1);
-        //tromboneNotes.add(noteGSharp1);
-        //tromboneNotes.add(noteASharp1);
         this.notes = tromboneNotes;
     }
     public int getVolume() {
