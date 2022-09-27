@@ -26,9 +26,14 @@ Vu Thanh Hai:
     -	Making Demo video.
     -	Test the application.
 
-
 Link demo:
 https://drive.google.com/drive/folders/1TFkOjVpH8tt_QFoTXQyaMbbIgBfutfoF
+###########################################################################################################################
+In this project we use Javafx lib and Jfugue-5.0.9 lib, please install 2 libs and add  this to our project to run.
+
+Install: 
+    JavaFX: https://gluonhq.com/products/javafx/
+    Jfugue: http://www.jfugue.org/download.html
 
 
  
